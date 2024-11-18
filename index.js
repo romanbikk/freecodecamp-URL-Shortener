@@ -38,7 +38,7 @@ app.post('/api/shorturl', function (req, res) {
   res.json({ original_url : url, short_url : id})
 });
 
-app.get('/api/:id', (req, res) => {
+app.get('/api/shorturl/:id', (req, res) => {
   const id = req.params.id;
   const url = urls[id];
 
