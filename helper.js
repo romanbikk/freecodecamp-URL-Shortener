@@ -1,7 +1,7 @@
 
 const { URL } = require('url');
 
-const stringIsAValidUrl = (s, protocols) => {
+const stringIsAValidUrl = (s, protocols = ['http', 'https']) => {
     try {
         const url = new URL(s);
         return protocols
